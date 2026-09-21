@@ -1,77 +1,77 @@
 # 🌦️ Weather Condition Classification using SVM
 
-A machine learning project that uses a **Support Vector Machine (SVM)** to classify weather conditions into **Warm** and **Cool** categories based on weather-related attributes.
+## 📌 Overview
 
-The project demonstrates a complete classification workflow including data preprocessing, feature scaling, SVM training, and model evaluation.
+This project uses a Support Vector Machine (SVM) to classify weather conditions into **Warm** and **Cool** categories based on weather-related attributes.
+
+The classification target is created from temperature, with **25°C** used as the threshold.
 
 ---
 
-## 📌 Overview
+## 🎯 Objective
 
-The model predicts whether the weather condition is **Warm** or **Cool** using:
+Develop an SVM classifier to predict whether the weather is **Warm** or **Cool** using selected weather attributes.
+
+---
+
+## 📊 Dataset
+
+The dataset contains the following features:
 
 - Temperature
 - Relative Humidity
 - Surface Pressure
 - Wind Speed
 
-The target variable `Weather_Class` is created using a temperature threshold:
+### Target Variable
 
-- **Warm:** Temperature ≥ 25°C
-- **Cool:** Temperature < 25°C
+A `Weather_Class` target is created based on temperature:
 
----
-
-## 🎯 Objective
-
-The main objectives of this project are to:
-
-- Analyze weather-related data.
-- Create a classification target from temperature.
-- Preprocess and prepare the dataset.
-- Scale features using `StandardScaler`.
-- Train an SVM classifier using an RBF kernel.
-- Evaluate classification performance using multiple metrics.
+- **Warm** → Temperature ≥ 25°C
+- **Cool** → Temperature < 25°C
 
 ---
 
-## 📊 Dataset
+## 🛠️ Technologies Used
 
-The dataset contains weather measurements used to classify weather conditions.
-
-### Features
-
-| Feature | Description |
-|---|---|
-| Temperature | Temperature measurement in °C |
-| Relative Humidity | Relative humidity level |
-| Surface Pressure | Atmospheric surface pressure |
-| Wind Speed | Wind speed measurement |
-
-### Target
-
-| Class | Condition |
-|---|---|
-| Warm | Temperature ≥ 25°C |
-| Cool | Temperature < 25°C |
+- Python
+- Pandas
+- Scikit-learn
 
 ---
 
-## 🧠 Machine Learning Workflow
+## ⚙️ Machine Learning Workflow
+
+1. Load the weather dataset.
+2. Preprocess the data.
+3. Create the target variable.
+4. Encode categorical data.
+5. Split the dataset into training and testing sets using an 80:20 ratio.
+6. Scale features using `StandardScaler`.
+7. Train an SVM using the RBF kernel.
+8. Evaluate the classification performance.
+
+---
+
+## 📈 Evaluation Metrics
+
+The model is evaluated using:
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+
+---
+
+## 📂 Project Structure
 
 ```text
-Weather Dataset
-      ↓
-Data Preprocessing
-      ↓
-Create Weather_Class
-      ↓
-Label Encoding
-      ↓
-Train-Test Split (80:20)
-      ↓
-Feature Scaling
-      ↓
-SVM with RBF Kernel
-      ↓
-Model Evaluation
+Weather-Condition-Classification/
+│
+├── weather_condition_classification_svm.py
+├── weather_data.csv
+├── README.md
+├── requirements.txt
+└── .gitignore
