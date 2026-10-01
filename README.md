@@ -1,6 +1,6 @@
-# 🌦️ Weather Condition Classification using SVM
+#  Weather Condition Classification using SVM
 
-## 📌 Overview
+##  Overview
 
 This project uses a Support Vector Machine (SVM) to classify weather conditions into **Warm** and **Cool** categories based on weather-related attributes.
 
@@ -8,13 +8,13 @@ The classification target is created from temperature, with **25°C** used as th
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 Develop an SVM classifier to predict whether the weather is **Warm** or **Cool** using selected weather attributes.
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The dataset contains the following features:
 
@@ -32,7 +32,7 @@ A `Weather_Class` target is created based on temperature:
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Python
 - Pandas
@@ -40,7 +40,7 @@ A `Weather_Class` target is created based on temperature:
 
 ---
 
-## ⚙️ Machine Learning Workflow
+##  Machine Learning Workflow
 
 1. Load the weather dataset.
 2. Preprocess the data.
@@ -53,7 +53,7 @@ A `Weather_Class` target is created based on temperature:
 
 ---
 
-## 📈 Evaluation Metrics
+##  Evaluation Metrics
 
 The model is evaluated using:
 
@@ -65,7 +65,7 @@ The model is evaluated using:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 Weather-Condition-Classification/
